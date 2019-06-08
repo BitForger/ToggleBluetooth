@@ -21,6 +21,8 @@
 		AB5ED00022AC236600F2052D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB5ED00222AC236600F2052D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5ED00322AC236600F2052D /* ToggleBluetooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToggleBluetooth.entitlements; sourceTree = "<group>"; };
+		AB5ED00B22AC36C500F2052D /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		AB5ED00C22AC401100F2052D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,12 @@
 			isa = PBXGroup;
 			children = (
 				AB5ECFF922AC236500F2052D /* AppDelegate.swift */,
+				AB5ED00B22AC36C500F2052D /* Header.h */,
 				AB5ECFFB22AC236500F2052D /* ViewController.swift */,
 				AB5ECFFD22AC236600F2052D /* Assets.xcassets */,
 				AB5ECFFF22AC236600F2052D /* Main.storyboard */,
 				AB5ED00222AC236600F2052D /* Info.plist */,
+				AB5ED00C22AC401100F2052D /* README.md */,
 				AB5ED00322AC236600F2052D /* ToggleBluetooth.entitlements */,
 			);
 			path = ToggleBluetooth;
@@ -95,6 +99,11 @@
 				TargetAttributes = {
 					AB5ECFF522AC236500F2052D = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -272,8 +281,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToggleBluetooth/ToggleBluetooth.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToggleBluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,6 +292,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.polarbeardigital.ToggleBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ToggleBluetooth/Header.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -290,8 +303,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToggleBluetooth/ToggleBluetooth.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToggleBluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +314,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tech.polarbeardigital.ToggleBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ToggleBluetooth/Header.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
