@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB47595E22AF276F00D859D8 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47595D22AF276F00D859D8 /* ApplicationController.swift */; };
 		AB5ECFFA22AC236500F2052D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5ECFF922AC236500F2052D /* AppDelegate.swift */; };
-		AB5ECFFC22AC236500F2052D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5ECFFB22AC236500F2052D /* ViewController.swift */; };
 		AB5ECFFE22AC236600F2052D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5ECFFD22AC236600F2052D /* Assets.xcassets */; };
-		AB5ED00122AC236600F2052D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5ECFFF22AC236600F2052D /* Main.storyboard */; };
+		AB8D7F7422AE0ECB00E6E7A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7F7322AE0ECB00E6E7A1 /* MainMenu.xib */; };
+		CA635506539ACBAF6E956479 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CA635396E88C080E1257019A /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB47595D22AF276F00D859D8 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		AB5ECFF622AC236500F2052D /* ToggleBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToggleBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5ECFF922AC236500F2052D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB5ECFFB22AC236500F2052D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB5ECFFD22AC236600F2052D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB5ED00022AC236600F2052D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB5ED00222AC236600F2052D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5ED00322AC236600F2052D /* ToggleBluetooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToggleBluetooth.entitlements; sourceTree = "<group>"; };
 		AB5ED00B22AC36C500F2052D /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		AB5ED00C22AC401100F2052D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		AB8D7F7322AE0ECB00E6E7A1 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		CA635396E88C080E1257019A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			children = (
 				AB5ECFF822AC236500F2052D /* ToggleBluetooth */,
 				AB5ECFF722AC236500F2052D /* Products */,
+				CA635396E88C080E1257019A /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +58,11 @@
 		AB5ECFF822AC236500F2052D /* ToggleBluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				AB47595D22AF276F00D859D8 /* ApplicationController.swift */,
+				AB8D7F7322AE0ECB00E6E7A1 /* MainMenu.xib */,
 				AB5ECFF922AC236500F2052D /* AppDelegate.swift */,
 				AB5ED00B22AC36C500F2052D /* Header.h */,
-				AB5ECFFB22AC236500F2052D /* ViewController.swift */,
 				AB5ECFFD22AC236600F2052D /* Assets.xcassets */,
-				AB5ECFFF22AC236600F2052D /* Main.storyboard */,
 				AB5ED00222AC236600F2052D /* Info.plist */,
 				AB5ED00C22AC401100F2052D /* README.md */,
 				AB5ED00322AC236600F2052D /* ToggleBluetooth.entitlements */,
@@ -130,8 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8D7F7422AE0ECB00E6E7A1 /* MainMenu.xib in Resources */,
 				AB5ECFFE22AC236600F2052D /* Assets.xcassets in Resources */,
-				AB5ED00122AC236600F2052D /* Main.storyboard in Resources */,
+				CA635506539ACBAF6E956479 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5ECFFC22AC236500F2052D /* ViewController.swift in Sources */,
+				AB47595E22AF276F00D859D8 /* ApplicationController.swift in Sources */,
 				AB5ECFFA22AC236500F2052D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AB5ECFFF22AC236600F2052D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB5ED00022AC236600F2052D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AB5ED00422AC236600F2052D /* Debug */ = {

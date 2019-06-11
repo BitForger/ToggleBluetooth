@@ -26,8 +26,8 @@
 	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Noah Kovacs. All rights reserved. Icon Credits go to https://www.flaticon.com/authors/smashicons and https://www.flaticon.com/authors/roundicons and https://www.flaticon.com/authors/google</string>
-	<key>NSMainStoryboardFile</key>
-	<string>Main</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
